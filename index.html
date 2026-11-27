@@ -4,70 +4,249 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#101014">
-<title>NAN CAR GARAGE | ជាងឡាន ណាន</title>
+
+<title>NAN CAR GARAGE | ជាងឡាន ណាន - សេវាជួសជុលរថយន្ត</title>
+
+<!-- SEO -->
+<meta name="description" content="NAN CAR GARAGE - សេវាជួសជុល និងថែទាំរថយន្តគ្រប់ប្រភេទ ជួសជុលម៉ាស៊ីន ប្តូរប្រេង ហ្វ្រាំង អាគុយ ម៉ាស៊ីនត្រជាក់ នៅត្បូងឃ្មុំ។ កក់ពេលតាម Telegram ឬ Form។">
+<meta name="keywords" content="ជួសជុលរថយន្ត, ហាងជួសជុលរថយន្ត, ជាងឡាន, car garage, auto mechanic, ត្បូងឃ្មុំ, កម្ពុជា">
+<meta name="author" content="NAN CAR GARAGE">
+<link rel="canonical" href="https://cnauto-mechanic.netlify.app/">
+
+<!-- Open Graph (Facebook / Telegram) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="NAN CAR GARAGE - សេវាជួសជុលរថយន្ត">
+<meta property="og:description" content="សេវាជួសជុលរថយន្តគ្រប់ប្រភេទ ដោយជាងជំនាញ និងឧបករណ៍ទំនើប។ កក់ពេលបានឥឡូវនេះ។">
+<meta property="og:image" content="https://cnauto-mechanic.netlify.app/assets/garage-premium-logo.png">
+<meta property="og:url" content="https://cnauto-mechanic.netlify.app/">
+<meta property="og:site_name" content="NAN CAR GARAGE">
+<meta property="og:locale" content="km_KH">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NAN CAR GARAGE - សេវាជួសជុលរថយន្ត">
+<meta name="twitter:description" content="សេវាជួសជុលរថយន្តគ្រប់ប្រភេទ នៅត្បូងឃ្មុំ កម្ពុជា">
+<meta name="twitter:image" content="https://cnauto-mechanic.netlify.app/assets/garage-premium-logo.png">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/garage-premium-logo.png">
+<link rel="apple-touch-icon" href="assets/garage-premium-logo.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Koulen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="intro-screen" id="introScreen"><div class="intro-emblem"><img src="assets/garage-premium-logo.png" alt="GARAGE PREMIUM"></div><div class="intro-name">NAN <span>CAR GARAGE</span></div><div class="intro-line"></div><p>សូមស្វាគមន៍មកកាន់ហាងយើង</p></div>
+
+<div class="intro-screen" id="introScreen">
+  <div class="intro-emblem"><img src="assets/garage-premium-logo.png" alt="ឡូហ្គោ GARAGE PREMIUM"></div>
+  <div class="intro-name">NAN <span>CAR GARAGE</span></div>
+  <div class="intro-line"></div>
+  <p>សូមស្វាគមន៍មកកាន់ហាងយើង</p>
+</div>
+
 <header class="topbar">
-  <a class="brand" href="#home"><img class="brand-logo" src="assets/garage-premium-logo.png" alt="GARAGE PREMIUM"><span>NAN <b>CAR GARAGE</b><small>ជាងឡាន ណាន</small></span></a>
-  <button class="menu" aria-label="បើកម៉ឺនុយ" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
-  <nav><a href="#home">ទំព័រដើម</a><a href="#services">សេវាកម្ម</a><a href="#projects">ស្នាដៃ</a><a href="#about">អំពីយើង</a><a href="#logo">ឡូហ្គោ</a><a href="#prices">សួរតម្លៃ</a><a href="#booking">កក់ជួសជុល</a><a href="#contact">ទំនាក់ទំនង</a></nav>
+  <a class="brand" href="#home" aria-label="NAN CAR GARAGE - ទំព័រដើម">
+    <img class="brand-logo" src="assets/garage-premium-logo.png" alt="ឡូហ្គោ GARAGE PREMIUM" width="48" height="48">
+    <span>NAN <b>CAR GARAGE</b><small>ជាងឡាន ណាន</small></span>
+  </a>
+  <button class="menu" aria-label="បើកម៉ឺនុយ" aria-expanded="false" aria-controls="mainNav" onclick="toggleMenu(this)">☰</button>
+  <nav id="mainNav">
+    <a href="#home">ទំព័រដើម</a>
+    <a href="#services">សេវាកម្ម</a>
+    <a href="#projects">ស្នាដៃ</a>
+    <a href="#about">អំពីយើង</a>
+    <a href="#logo">ឡូហ្គោ</a>
+    <a href="#prices">សួរតម្លៃ</a>
+    <a href="#booking">កក់ជួសជុល</a>
+    <a href="#contact">ទំនាក់ទំនង</a>
+  </nav>
 </header>
+
 <main>
 <section class="hero" id="home">
   <div class="hero-content">
     <p class="eyebrow">សេវាកម្មជួសជុល និងថែទាំរថយន្ត</p>
     <h1>NAN <em>CAR GARAGE</em></h1>
     <p class="lead">ថែទាំរថយន្តរបស់លោកអ្នក ដោយយកចិត្តទុកដាក់ និងមានទំនុកចិត្ត។</p>
-    <div class="actions"><a class="btn red" href="#booking">កក់ពេលជួសជុល</a><a class="btn outline" href="#services">មើលសេវាកម្ម</a></div>
+    <div class="actions">
+      <a class="btn red" href="#booking">កក់ពេលជួសជុល</a>
+      <a class="btn outline" href="#services">មើលសេវាកម្ម</a>
+    </div>
   </div>
-  <div class="hero-car"><img src="assets/home-garage-cars.jpg" alt="រថយន្តនៅមុខយានដ្ឋាន NAN CAR GARAGE"><span>PROFESSIONAL AUTO SERVICE</span></div>
+  <div class="hero-car">
+    <img src="assets/home-garage-cars.jpg" alt="រថយន្តនៅមុខយានដ្ឋាន NAN CAR GARAGE" loading="eager">
+    <span>PROFESSIONAL AUTO SERVICE</span>
+  </div>
 </section>
-<section class="trust"><div><b>✓</b> ពិនិត្យរថយន្តច្បាស់លាស់</div><div><b>✓</b> សេវាកម្មយកចិត្តទុកដាក់</div><div><b>✓</b> ជូនដំណឹងមុនជួសជុល</div></section>
-<section class="section" id="services"><div class="section-head"><p class="eyebrow">WHAT WE DO</p><h2>សេវាកម្មរបស់យើង</h2><p>ជ្រើសរើសសេវាកម្មដែលអ្នកត្រូវការ</p></div>
-<div class="cards">
-<article class="service"><div class="ico">🔧</div><h3>ជួសជុលម៉ាស៊ីន</h3><p>ពិនិត្យ និងជួសជុលបញ្ហាម៉ាស៊ីនរថយន្ត។</p></article>
-<article class="service"><div class="ico">🛢️</div><h3>ប្តូរប្រេងម៉ាស៊ីន</h3><p>ប្តូរប្រេង និងពិនិត្យតម្រងប្រេង។</p></article>
-<article class="service"><div class="ico">🛞</div><h3>ប្រព័ន្ធហ្វ្រាំង និងកង់</h3><p>ពិនិត្យហ្វ្រាំង កង់ និងប្រព័ន្ធព្យួរ។</p></article>
-<article class="service"><div class="ico">🔋</div><h3>អាគុយ និងប្រព័ន្ធភ្លើង</h3><p>ពិនិត្យអាគុយ ឌីណាម៉ូ និងភ្លើងរថយន្ត។</p></article>
-<article class="service"><div class="ico">❄️</div><h3>ម៉ាស៊ីនត្រជាក់</h3><p>ពិនិត្យ និងថែទាំប្រព័ន្ធម៉ាស៊ីនត្រជាក់។</p></article>
-<article class="service"><div class="ico">🧰</div><h3>ពិនិត្យទូទៅ</h3><p>ត្រួតពិនិត្យសុវត្ថិភាព និងស្ថានភាពរថយន្ត។</p></article>
-</div></section>
 
-<section class="section projects" id="projects"><div class="section-head"><p class="eyebrow">OUR PROJECTS</p><h2>ស្នាដៃ និងការងាររបស់យើង</h2><p>បង្ហាញពីការថែទាំ និងជួសជុលរថយន្តនៅហាង NAN CAR GARAGE។</p></div>
-<div class="project-grid"><article><div class="project-icon">🚘</div><h3>ថែទាំរថយន្ត</h3><p>ការថែទាំតាមកាលកំណត់</p></article><article><div class="project-icon">🛠️</div><h3>ការងារជួសជុល</h3><p>ពិនិត្យ និងដោះស្រាយបញ្ហារថយន្ត</p></article><article><div class="project-icon">⚙️</div><h3>គ្រឿងបន្លាស់</h3><p>ពិនិត្យ និងប្តូរគ្រឿងបន្លាស់</p></article></div></section>
-<section class="section about" id="about"><div class="section-head"><p class="eyebrow">ABOUT US</p><h2>អំពី NAN CAR GARAGE</h2><p>NAN CAR GARAGE ជាសេវាកម្មជួសជុល និងថែទាំរថយន្ត។ យើងផ្តោតលើការយកចិត្តទុកដាក់ ការពន្យល់បញ្ហាឱ្យច្បាស់ និងការជូនដំណឹងអំពីតម្លៃមុនពេលជួសជុល។</p></div></section>
-<section class="section logo-section" id="logo"><div class="section-head"><p class="eyebrow">OUR BRAND</p><h2>ឡូហ្គោ GARAGE PREMIUM</h2><p>សញ្ញាសម្គាល់របស់ NAN CAR GARAGE</p></div><img class="main-logo" src="assets/garage-premium-logo.png" alt="ឡូហ្គោ GARAGE PREMIUM"></section>
-
-<section class="section prices" id="prices"><div class="section-head"><p class="eyebrow">SERVICE & PARTS</p><h2>សួរតម្លៃសេវាកម្ម និងគ្រឿងបន្លាស់</h2><p>ជ្រើសរើសសេវាកម្ម រួចចុច «សួរតម្លៃ» ដើម្បីទាក់ទងមកយើង។</p></div>
-<div class="price-list">
-<div><span>ពិនិត្យរថយន្តទូទៅ</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
-<div><span>ប្តូរប្រេងម៉ាស៊ីន</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
-<div><span>ពិនិត្យប្រព័ន្ធហ្វ្រាំង</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
-<div><span>ពិនិត្យអាគុយ និងភ្លើង</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
-<div><span>ម៉ាស៊ីនត្រជាក់</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
-<div><span>គ្រឿងបន្លាស់</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
-</div><p class="note">* តម្លៃអាស្រ័យលើប្រភេទរថយន្ត និងគ្រឿងបន្លាស់។ សូមចុច «សួរតម្លៃ» ដើម្បីទទួលព័ត៌មានលម្អិត។</p>
+<section class="trust">
+  <div><b>✓</b> ពិនិត្យរថយន្តច្បាស់លាស់</div>
+  <div><b>✓</b> សេវាកម្មយកចិត្តទុកដាក់</div>
+  <div><b>✓</b> ជូនដំណឹងមុនជួសជុល</div>
 </section>
-<section class="section booking" id="booking"><div class="section-head"><p class="eyebrow">MAKE AN APPOINTMENT</p><h2>កក់ពេលជួសជុល</h2><p>បំពេញព័ត៌មានខាងក្រោម ហើយចុចផ្ញើការកក់។</p></div>
-<form id="bookingForm">
-<div class="form-grid">
-<label>ឈ្មោះរបស់អ្នក<input name="name" required placeholder="បញ្ចូលឈ្មោះ"></label>
-<label>លេខទូរស័ព្ទ<input name="phone" required type="tel" placeholder="ឧ. 012 345 678"></label>
-<label>ម៉ាក និងម៉ូដែលរថយន្ត<input name="car" required placeholder="ឧ. Toyota Prius 2015"></label>
-<label>ថ្ងៃដែលចង់មក<input name="date" required type="date"></label>
-<label class="wide">សេវាកម្មដែលត្រូវការ<select name="service"><option>ជួសជុលម៉ាស៊ីន</option><option>ប្តូរប្រេងម៉ាស៊ីន</option><option>ហ្វ្រាំង និងកង់</option><option>អាគុយ និងប្រព័ន្ធភ្លើង</option><option>ម៉ាស៊ីនត្រជាក់</option><option>ពិនិត្យទូទៅ</option><option>ផ្សេងៗ</option></select></label>
-<label class="wide">បញ្ហារថយន្ត (បើមាន)<textarea name="details" rows="3" placeholder="សរសេរព័ត៌មានបន្ថែម..."></textarea></label>
-</div><button class="btn red submit" type="submit">ផ្ញើការកក់តាម Gmail</button><p class="form-hint" id="formHint">ចំណាំ៖ ចុចផ្ញើការកក់ ដើម្បីបើក Gmail ជាមួយព័ត៌មានកក់ដែលបានបំពេញជាមុន។</p>
-</form></section>
-<section class="contact" id="contact"><div><p class="eyebrow">CONTACT US</p><h2>ទាក់ទង NAN CAR GARAGE</h2><p>យើងរីករាយក្នុងការជួយថែទាំរថយន្តរបស់អ្នក។</p></div>
-<div class="contact-items"><p>☎️ <b>លេខទូរស័ព្ទ៖</b> <a href="tel:086658803">086 658 803</a></p><p>📍 <b>ទីតាំង៖</b> <span>ឃុំជប់ ស្រុកត្បូងឃ្មុំ ខេត្តត្បូងឃ្មុំ ប្រទេសកម្ពុជា</span></p><p><a href="https://www.google.com/maps/search/?api=1&query=ឃុំជប់+ស្រុកត្បូងឃ្មុំ+ខេត្តត្បូងឃ្មុំ+កម្ពុជា" target="_blank" rel="noopener">មើលទីតាំងលើ Google Maps</a></p><p>✈️ <b>Telegram៖</b> <a href="https://t.me/nangamerkh" target="_blank" rel="noopener">t.me/nangamerkh</a></p><a class="btn telegram" href="https://t.me/nangamerkh" target="_blank" rel="noopener">ទាក់ទងតាម Telegram</a></div>
+
+<section class="section" id="services">
+  <div class="section-head">
+    <p class="eyebrow">WHAT WE DO</p>
+    <h2>សេវាកម្មរបស់យើង</h2>
+    <p>ជ្រើសរើសសេវាកម្មដែលអ្នកត្រូវការ</p>
+  </div>
+  <div class="cards">
+    <article class="service"><div class="ico" aria-hidden="true">🔧</div><h3>ជួសជុលម៉ាស៊ីន</h3><p>ពិនិត្យ និងជួសជុលបញ្ហាម៉ាស៊ីនរថយន្ត។</p></article>
+    <article class="service"><div class="ico" aria-hidden="true">🛢️</div><h3>ប្តូរប្រេងម៉ាស៊ីន</h3><p>ប្តូរប្រេង និងពិនិត្យតម្រងប្រេង។</p></article>
+    <article class="service"><div class="ico" aria-hidden="true">🛞</div><h3>ប្រព័ន្ធហ្វ្រាំង និងកង់</h3><p>ពិនិត្យហ្វ្រាំង កង់ និងប្រព័ន្ធព្យួរ។</p></article>
+    <article class="service"><div class="ico" aria-hidden="true">🔋</div><h3>អាគុយ និងប្រព័ន្ធភ្លើង</h3><p>ពិនិត្យអាគុយ ឌីណាម៉ូ និងភ្លើងរថយន្ត។</p></article>
+    <article class="service"><div class="ico" aria-hidden="true">❄️</div><h3>ម៉ាស៊ីនត្រជាក់</h3><p>ពិនិត្យ និងថែទាំប្រព័ន្ធម៉ាស៊ីនត្រជាក់។</p></article>
+    <article class="service"><div class="ico" aria-hidden="true">🧰</div><h3>ពិនិត្យទូទៅ</h3><p>ត្រួតពិនិត្យសុវត្ថិភាព និងស្ថានភាពរថយន្ត។</p></article>
+  </div>
+</section>
+
+<section class="section projects" id="projects">
+  <div class="section-head">
+    <p class="eyebrow">OUR PROJECTS</p>
+    <h2>ស្នាដៃ និងការងាររបស់យើង</h2>
+    <p>បង្ហាញពីការថែទាំ និងជួសជុលរថយន្តនៅហាង NAN CAR GARAGE។</p>
+  </div>
+  <div class="project-grid">
+    <article><div class="project-icon" aria-hidden="true">🚘</div><h3>ថែទាំរថយន្ត</h3><p>ការថែទាំតាមកាលកំណត់</p></article>
+    <article><div class="project-icon" aria-hidden="true">🛠️</div><h3>ការងារជួសជុល</h3><p>ពិនិត្យ និងដោះស្រាយបញ្ហារថយន្ត</p></article>
+    <article><div class="project-icon" aria-hidden="true">⚙️</div><h3>គ្រឿងបន្លាស់</h3><p>ពិនិត្យ និងប្តូរគ្រឿងបន្លាស់</p></article>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="section-head">
+    <p class="eyebrow">ABOUT US</p>
+    <h2>អំពី NAN CAR GARAGE</h2>
+    <p>NAN CAR GARAGE ជាសេវាកម្មជួសជុល និងថែទាំរថយន្ត។ យើងផ្តោតលើការយកចិត្តទុកដាក់ ការពន្យល់បញ្ហាឱ្យច្បាស់ និងការជូនដំណឹងអំពីតម្លៃមុនពេលជួសជុល។</p>
+  </div>
+</section>
+
+<section class="section logo-section" id="logo">
+  <div class="section-head">
+    <p class="eyebrow">OUR BRAND</p>
+    <h2>ឡូហ្គោ GARAGE PREMIUM</h2>
+    <p>សញ្ញាសម្គាល់របស់ NAN CAR GARAGE</p>
+  </div>
+  <img class="main-logo" src="assets/garage-premium-logo.png" alt="ឡូហ្គោ GARAGE PREMIUM របស់ NAN CAR GARAGE" loading="lazy">
+</section>
+
+<section class="section prices" id="prices">
+  <div class="section-head">
+    <p class="eyebrow">SERVICE & PARTS</p>
+    <h2>សួរតម្លៃសេវាកម្ម និងគ្រឿងបន្លាស់</h2>
+    <p>ជ្រើសរើសសេវាកម្ម រួចចុច «សួរតម្លៃ» ដើម្បីទាក់ទងមកយើង។</p>
+  </div>
+  <div class="price-list">
+    <div><span>ពិនិត្យរថយន្តទូទៅ</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
+    <div><span>ប្តូរប្រេងម៉ាស៊ីន</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
+    <div><span>ពិនិត្យប្រព័ន្ធហ្វ្រាំង</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
+    <div><span>ពិនិត្យអាគុយ និងភ្លើង</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
+    <div><span>ម៉ាស៊ីនត្រជាក់</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
+    <div><span>គ្រឿងបន្លាស់</span><a class="ask-price" href="https://t.me/nangamerkh" target="_blank" rel="noopener">សួរតម្លៃ</a></div>
+  </div>
+  <p class="note">* តម្លៃអាស្រ័យលើប្រភេទរថយន្ត និងគ្រឿងបន្លាស់។ សូមចុច «សួរតម្លៃ» ដើម្បីទទួលព័ត៌មានលម្អិត។</p>
+</section>
+
+<section class="section booking" id="booking">
+  <div class="section-head">
+    <p class="eyebrow">MAKE AN APPOINTMENT</p>
+    <h2>កក់ពេលជួសជុល</h2>
+    <p>បំពេញព័ត៌មានខាងក្រោម ហើយចុចផ្ញើការកក់។</p>
+  </div>
+
+  <form id="bookingForm" name="booking" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+    <input type="hidden" name="form-name" value="booking">
+    <p hidden><label>មិនត្រូវបំពេញ: <input name="bot-field"></label></p>
+
+    <div class="form-grid">
+      <label>ឈ្មោះរបស់អ្នក<input name="name" required placeholder="បញ្ចូលឈ្មោះ" autocomplete="name"></label>
+      <label>លេខទូរស័ព្ទ<input name="phone" required type="tel" placeholder="ឧ. 012 345 678" autocomplete="tel"></label>
+      <label>ម៉ាក និងម៉ូដែលរថយន្ត<input name="car" required placeholder="ឧ. Toyota Prius 2015"></label>
+      <label>ថ្ងៃដែលចង់មក<input name="date" required type="date"></label>
+      <label class="wide">សេវាកម្មដែលត្រូវការ
+        <select name="service">
+          <option>ជួសជុលម៉ាស៊ីន</option>
+          <option>ប្តូរប្រេងម៉ាស៊ីន</option>
+          <option>ហ្វ្រាំង និងកង់</option>
+          <option>អាគុយ និងប្រព័ន្ធភ្លើង</option>
+          <option>ម៉ាស៊ីនត្រជាក់</option>
+          <option>ពិនិត្យទូទៅ</option>
+          <option>ផ្សេងៗ</option>
+        </select>
+      </label>
+      <label class="wide">បញ្ហារថយន្ត (បើមាន)
+        <textarea name="details" rows="3" placeholder="សរសេរព័ត៌មានបន្ថែម..."></textarea>
+      </label>
+    </div>
+
+    <button class="btn red submit" type="submit">ផ្ញើការកក់</button>
+    <p class="form-hint" id="formHint">ចំណាំ៖ ការកក់របស់អ្នកនឹងត្រូវផ្ញើទៅហាងដោយផ្ទាល់។ យើងនឹងទាក់ទងអ្នកឆាប់ៗ។</p>
+  </form>
+
+  <noscript>
+    <p>JavaScript ត្រូវបានបិទ។ សូមទាក់ទងយើងតាម <a href="tel:086658803">086 658 803</a> ឬ <a href="https://t.me/nangamerkh">Telegram</a>។</p>
+  </noscript>
+</section>
+
+<section class="contact" id="contact">
+  <div>
+    <p class="eyebrow">CONTACT US</p>
+    <h2>ទាក់ទង NAN CAR GARAGE</h2>
+    <p>យើងរីករាយក្នុងការជួយថែទាំរថយន្តរបស់អ្នក។</p>
+  </div>
+  <div class="contact-items">
+    <p>☎️ <b>លេខទូរស័ព្ទ៖</b> <a href="tel:086658803">086 658 803</a></p>
+    <p>📍 <b>ទីតាំង៖</b> <span>ឃុំជប់ ស្រុកត្បូងឃ្មុំ ខេត្តត្បូងឃ្មុំ ប្រទេសកម្ពុជា</span></p>
+    <p><a href="https://www.google.com/maps/search/?api=1&query=ឃុំជប់+ស្រុកត្បូងឃ្មុំ+ខេត្តត្បូងឃ្មុំ+កម្ពុជា" target="_blank" rel="noopener">មើលទីតាំងលើ Google Maps</a></p>
+    <p>✈️ <b>Telegram៖</b> <a href="https://t.me/nangamerkh" target="_blank" rel="noopener">t.me/nangamerkh</a></p>
+    <a class="btn telegram" href="https://t.me/nangamerkh" target="_blank" rel="noopener">ទាក់ទងតាម Telegram</a>
+  </div>
 </section>
 </main>
+
 <footer>© <span id="year"></span> NAN CAR GARAGE · រក្សាសិទ្ធិគ្រប់យ៉ាង</footer>
+
 <script src="script.js"></script>
-</body></html>
+<script>
+function toggleMenu(btn) {
+  const nav = document.getElementById('mainNav');
+  const isOpen = nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', isOpen);
+}
+</script>
+</body>
+</html>
+<!doctype html>
+<html lang="km">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ការកក់បានជោគជ័យ | NAN CAR GARAGE</title>
+<link href="https://fonts.googleapis.com/css2?family=Battambang:wght@400;700&family=Koulen&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Battambang', sans-serif; background: #101014; color: #fff; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; text-align: center; padding: 20px; }
+  .box { max-width: 500px; }
+  h1 { color: #e11d2e; font-family: 'Koulen', sans-serif; font-size: 2rem; margin-bottom: 16px; }
+  p { line-height: 1.8; opacity: 0.9; }
+  a { display: inline-block; margin-top: 24px; padding: 12px 28px; background: #e11d2e; color: #fff; text-decoration: none; border-radius: 6px; font-weight: 700; }
+  a:hover { background: #c00; }
+</style>
+</head>
+<body>
+<div class="box">
+  <h1>✅ ការកក់បានជោគជ័យ!</h1>
+  <p>សូមអរគុណ! ការកក់របស់អ្នកត្រូវបានទទួលដោយ NAN CAR GARAGE។<br>យើងនឹងទាក់ទងអ្នកឆាប់ៗ។</p>
+  <a href="/">ត្រឡប់ទៅទំព័រដើម</a>
+</div>
+</body>
+</html>
+<script>
+function toggleMenu(btn) {
+  
+}
+</script>
+<a href="#main" class="skip-link">រំលងទៅខ្លឹមសារសំខាន់</a>
+<main id="main">
