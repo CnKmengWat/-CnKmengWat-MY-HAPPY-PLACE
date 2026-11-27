@@ -87,3 +87,54 @@ textarea:focus-visible,
 @media(max-width:760px){
   html{scroll-padding-top:120px}
 }
+
+/* សម្រាប់ Project ដែលមានរូបថត */
+.project-card {
+  background: #17171d;
+  border: 1px solid #34343d;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: #ed1c24;
+}
+
+.project-photo {
+  width: 100%;
+  height: 220px; /* កម្ពស់រូបថត */
+  overflow: hidden;
+  background: #0e0e13;
+}
+
+.project-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* កាត់រូបថតឱ្យល្មមស្អាត */
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-photo img {
+  transform: scale(1.08); /* Zoom ពេលយក Mouse ដាក់ */
+}
+
+.project-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.project-body h3 {
+  margin: 0 0 5px 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.project-body p {
+  margin: 0;
+  color: #aaa;
+  font-size: 14px;
+}
