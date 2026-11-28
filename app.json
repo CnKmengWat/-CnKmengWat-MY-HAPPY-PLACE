@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "LoveTalk",
+    "slug": "lovetalk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#100D20"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.lovetalk.social"
+    },
+    "android": {
+      "package": "com.lovetalk.social",
+      "adaptiveIcon": {
+        "backgroundColor": "#100D20"
+      }
+    }
+  }
+}
